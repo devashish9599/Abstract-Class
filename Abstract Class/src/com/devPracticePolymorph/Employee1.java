@@ -9,6 +9,8 @@ public abstract class Employee1 {
 	double Salary;
 	double tax;
 	
+	// getter and setter of variables.
+	
 	public double getSalary() {
 		return Salary;
 	}
@@ -40,10 +42,12 @@ public abstract class Employee1 {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	//
+	
+	//overriding toString method of object class.
 	public String toString() {
 		return "name: "+this.Name+", age: "+this.age+", contactNumber: "+this.Contact+", Salary: "+this.Salary+", TAX: "+this.tax;
 	}
-	//
+	
+	//creating abstract method.
 	public abstract double TaxCalculate();
 }
